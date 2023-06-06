@@ -7,7 +7,45 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\css\main.css" />
+    <Content Remove="wwwroot\img\gallery\Andrew.jpg" />
+    <Content Remove="wwwroot\img\gallery\ATMGallery.png" />
+    <Content Remove="wwwroot\img\gallery\BankGallery.png" />
+    <Content Remove="wwwroot\img\gallery\cody.jpg" />
+    <Content Remove="wwwroot\img\gallery\comingsoon.png" />
+    <Content Remove="wwwroot\img\gallery\darron.jpg" />
+    <Content Remove="wwwroot\img\gallery\devon.jpeg" />
+    <Content Remove="wwwroot\img\gallery\DungeonGallery1.png" />
+    <Content Remove="wwwroot\img\gallery\jace.png" />
+    <Content Remove="wwwroot\img\gallery\kyle.jpg" />
+    <Content Remove="wwwroot\img\gallery\nicholas.jpg" />
+    <Content Remove="wwwroot\img\gallery\Resume.png" />
+    <Content Remove="wwwroot\img\gallery\ResumeFinal.png" />
+    <Content Remove="wwwroot\img\gallery\rob.jpg" />
+    <Content Remove="wwwroot\js\main.js" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Archive\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\main.css" />
+    <None Include="wwwroot\img\gallery\Andrew.jpg" />
+    <None Include="wwwroot\img\gallery\ATMGallery.png" />
+    <None Include="wwwroot\img\gallery\BankGallery.png" />
+    <None Include="wwwroot\img\gallery\cody.jpg" />
+    <None Include="wwwroot\img\gallery\comingsoon.png" />
+    <None Include="wwwroot\img\gallery\darron.jpg" />
+    <None Include="wwwroot\img\gallery\devon.jpeg" />
+    <None Include="wwwroot\img\gallery\DungeonGallery1.png" />
+    <None Include="wwwroot\img\gallery\jace.png" />
+    <None Include="wwwroot\img\gallery\kyle.jpg" />
+    <None Include="wwwroot\img\gallery\nicholas.jpg" />
+    <None Include="wwwroot\img\gallery\Resume.png" />
+    <None Include="wwwroot\img\gallery\ResumeFinal.png" />
+    <None Include="wwwroot\img\gallery\rob.jpg" />
+    <None Include="wwwroot\js\main.js" />
   </ItemGroup>
 
 </Project>
