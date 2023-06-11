@@ -1,0 +1,75 @@
+﻿@model Block1StudentWebsite.Models.ContactViewModel
+
+@{
+    ViewData["Title"] = "Contact";
+}
+
+<section id="hero" class="hero d-flex flex-column justify-content-center align-items-center" data-aos="fade" data-aos-delay="1500">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 text-center">
+                <h2><span>Contact</span></h2>
+                <p>FORM CURRENTLY NOT FUNCTIONAL! Please refer to my email or send me a message on Linkedin!</p>
+            </div>
+            <div class="row mt-5 justify-content-around">
+                <div class="email col-md-2">
+                    <h2>Email</h2>
+                    <p>email.example@domain.com</p>
+                </div>
+                <div class="row mt-5 justify-content-around">
+                    <div class="linkedin col-md-2">
+                        <h2>
+                            <a href="https://www.linkedin.com/in/andrew-cocroft-4a2952275/">LinkedIn</a>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section><!-- End Hero Section -->
+
+<main>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <form asp-action="Contact">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="Name" class="control-label"></label>
+                        <input asp-for="Name" class="form-control" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Email" class="control-label"></label>
+                        <input asp-for="Email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Subject" class="control-label"></label>
+                        <input asp-for="Subject" class="form-control" />
+                        <span asp-validation-for="Subject" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Message" class="control-label"></label>
+                        <textarea asp-for="Message" class="form-control"></textarea>
+                        <span asp-validation-for="Message" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Create" class="btn btn-secondary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    <!-- jQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
