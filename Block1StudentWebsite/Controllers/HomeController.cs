@@ -54,7 +54,7 @@ namespace Block1StudentWebsite.Controllers
         }
 
         [HttpPost]
-        public IActionResult PostContact(ContactViewModel cvm)
+        public IActionResult Contact(ContactViewModel cvm)
         {
             if(!ModelState.IsValid)
             {
