@@ -950,9 +950,6 @@ h6 {
 --------------------------------------------------------------*/
 input[type=text], select, textarea {
     width: 100%;
-    padding: 12px;
-    border: 7px solid #751e6a;
-    border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
